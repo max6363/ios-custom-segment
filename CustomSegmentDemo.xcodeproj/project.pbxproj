@@ -13,6 +13,9 @@
 		88436BE61EDAFD0100C1785D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88436BE41EDAFD0100C1785D /* Main.storyboard */; };
 		88436BE81EDAFD0100C1785D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88436BE71EDAFD0100C1785D /* Assets.xcassets */; };
 		88436BEB1EDAFD0100C1785D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88436BE91EDAFD0100C1785D /* LaunchScreen.storyboard */; };
+		88436BF91EDAFD6000C1785D /* CustomSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 88436BF41EDAFD6000C1785D /* CustomSegment.m */; };
+		88436BFA1EDAFD6000C1785D /* CustomSegmentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88436BF61EDAFD6000C1785D /* CustomSegmentObject.m */; };
+		88436BFB1EDAFD6000C1785D /* CustomSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88436BF81EDAFD6000C1785D /* CustomSegmentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		88436BE71EDAFD0100C1785D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88436BEA1EDAFD0100C1785D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88436BEC1EDAFD0100C1785D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88436BF31EDAFD6000C1785D /* CustomSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegment.h; sourceTree = "<group>"; };
+		88436BF41EDAFD6000C1785D /* CustomSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegment.m; sourceTree = "<group>"; };
+		88436BF51EDAFD6000C1785D /* CustomSegmentObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegmentObject.h; sourceTree = "<group>"; };
+		88436BF61EDAFD6000C1785D /* CustomSegmentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentObject.m; sourceTree = "<group>"; };
+		88436BF71EDAFD6000C1785D /* CustomSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegmentView.h; sourceTree = "<group>"; };
+		88436BF81EDAFD6000C1785D /* CustomSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		88436BDA1EDAFD0100C1785D /* CustomSegmentDemo */ = {
 			isa = PBXGroup;
 			children = (
+				88436BF21EDAFD6000C1785D /* CustomSegment */,
 				88436BDE1EDAFD0100C1785D /* AppDelegate.h */,
 				88436BDF1EDAFD0100C1785D /* AppDelegate.m */,
 				88436BE11EDAFD0100C1785D /* ViewController.h */,
@@ -77,6 +87,19 @@
 				88436BDC1EDAFD0100C1785D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88436BF21EDAFD6000C1785D /* CustomSegment */ = {
+			isa = PBXGroup;
+			children = (
+				88436BF31EDAFD6000C1785D /* CustomSegment.h */,
+				88436BF41EDAFD6000C1785D /* CustomSegment.m */,
+				88436BF51EDAFD6000C1785D /* CustomSegmentObject.h */,
+				88436BF61EDAFD6000C1785D /* CustomSegmentObject.m */,
+				88436BF71EDAFD6000C1785D /* CustomSegmentView.h */,
+				88436BF81EDAFD6000C1785D /* CustomSegmentView.m */,
+			);
+			path = CustomSegment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +133,7 @@
 				TargetAttributes = {
 					88436BD71EDAFD0100C1785D = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -150,9 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88436BF91EDAFD6000C1785D /* CustomSegment.m in Sources */,
+				88436BFB1EDAFD6000C1785D /* CustomSegmentView.m in Sources */,
 				88436BE31EDAFD0100C1785D /* ViewController.m in Sources */,
 				88436BE01EDAFD0100C1785D /* AppDelegate.m in Sources */,
 				88436BDD1EDAFD0100C1785D /* main.m in Sources */,
+				88436BFA1EDAFD6000C1785D /* CustomSegmentObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +298,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomSegmentDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iqtech.CustomSegmentDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,7 +312,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomSegmentDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iqtech.CustomSegmentDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
