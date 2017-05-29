@@ -2,6 +2,7 @@
 //  CustomSegmentView.h
 //
 //  Created by Minhaz Panara on 16/05/17.
+//  Copyright © 2017 minhaz. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

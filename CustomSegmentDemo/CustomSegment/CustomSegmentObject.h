@@ -2,6 +2,7 @@
 //  CustomSegmentObject.h
 //
 //  Created by Minhaz Panara on 15/05/17.
+//  Copyright © 2017 minhaz. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
